@@ -38,3 +38,9 @@ If you have an EnginFrame Enterprise setup, you must first stop the EnginFrame s
 Moreover, if you have a custom `hazelcast.xml` configuration \(modified from the default configuration\), you must do the following before updating to EnginFrame versions 2021\.0\-r1646 or later:
 + Port the custom `hazelcast.xml` to the format used by Hazelcast 5 following the [relevant Hazelcast documentation](https://docs.hazelcast.com/hazelcast/5.0/migrate/upgrading-from-imdg-3)\.
 + Copy it over to the `$EF_ROOT/conf folder`, overwriting the default `hazelcast.xml` file\.
+
+### Updating to EnginFrame version 2021\.0\-rxxxx or later<a name="tomcat-9"></a>
+When performing an update to this version from a previous installation of EnginFrame, you must make sure the _server.xml_ file in the tomcat folder `/opt/nice/enginframe/conf/tomcat/conf/server.xml` has this line removed since it breaks Tomcat 9.
+```xml
+<Listener className="org.apache.catalina.core.JasperListener" />
+```
