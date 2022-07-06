@@ -38,7 +38,7 @@ EnginFrame abstracts computing resources and data management \(*Resource Tier*\)
 The internal structure of EnginFrame reflects this high\-level architecture and revolves around two main software components: the EnginFrame Server and the EnginFrame Agent\. 
 
 The EnginFrame Server  
-The EnginFrame Server is a Java™ web application\. It must be deployed inside a Java Servlet container\. It exposes services to users\. EnginFrame ships with [Apache Tomcat® 7\.0\.105](http://tomcat.apache.org/)\.
+The EnginFrame Server is a Java™ web application\. It must be deployed inside a Java Servlet container\. It exposes services to users\. EnginFrame ships with [Apache Tomcat® 9\.0\.64](http://tomcat.apache.org/)\.
 
 The EnginFrame Agent  
 The EnginFrame Agent is a stand\-alone Java™ application that manages the computing resources and run services on user's behalf when running as `root`\. 
